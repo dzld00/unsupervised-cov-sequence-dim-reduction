@@ -4,7 +4,7 @@ Python code for dimension reduction in papaer: Analyzing Dynamical Brain Functio
 
 link: https://arxiv.org/abs/1904.05449
 
-The propsed unsupervised dimension reduction method can bring a sequence of covariance matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible, and their covariance structures in the lower dimension.
+The propsed unsupervised dimension reduction method can bring a sequence of covariance matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulted sequence in lower dimension have the symmetric and positive-definite structure preserved.
 
 # Prerequisities
 Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/ for details.
@@ -12,7 +12,15 @@ Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/
 Install: pip install --user pymanopt
 
 # Usage
+The input matrix is a 4d ndarray with shape (n,n,T,L), where the dimension of covariance matrices are n by n, T is the number of matrices in a sequence, and L is the number of covariance sequences.
 
+The resulting ndarray has shape (m,m,T,L), where m < n.
+
+In terminal, type: main.py --covseqs_dir xx --m xx
+
+covseqs_dir: file location of original sequences
+
+m: target lower dimension
 
 
 
