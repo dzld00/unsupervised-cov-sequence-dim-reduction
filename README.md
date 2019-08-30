@@ -12,15 +12,13 @@ Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/
 Install: pip install --user pymanopt
 
 # Usage
-The input matrix is a 4d ndarray with shape (n,n,T,L), where the dimension of covariance matrices are n by n, T is the number of matrices in a sequence, and L is the number of covariance sequences.
-
-The resulting ndarray has shape (m,m,T,L), where m < n.
+The input matrix is a 4d ndarray with shape (n,n,T,L), where the dimension of covariance matrices is n by n, T is the number of matrices in a sequence, and L is the number of covariance sequences. The resulting ndarray has shape (m,m,T,L), where m < n.
 
 In terminal, type: main.py --covseqs_dir xx --m xx
 
-covseqs_dir: file location of original sequences
+covseqs_dir: file location of original sequences; m: target lower dimension
 
-m: target lower dimension
+The default solver in the code is Trustregion, while user can use other solvers for fun. In Pymanopt package, user can define the stopping criteria for the task, by changing maxtime, maxiter, mingradnorm, minstepsize and maxcostevals in solver.py. Usually using a small maxiter is enough for getting meaningful results.
 
 
 
