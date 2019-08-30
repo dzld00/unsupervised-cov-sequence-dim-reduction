@@ -14,7 +14,7 @@ Install: pip install --user pymanopt
 # Usage
 The input matrix is a 4d ndarray with shape (n,n,T,L), where the dimension of covariance matrices is n by n, T is the number of matrices in a sequence, and L is the number of covariance sequences. The resulting ndarray has shape (m,m,T,L), where m < n.
 
-In terminal, type: main.py --covseqs_dir xx --m xx
+In terminal, type: python main.py --covseqs_dir xx --m xx
 
 covseqs_dir: file location of original sequences; m: target lower dimension
 
