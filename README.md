@@ -6,6 +6,7 @@ link: https://arxiv.org/abs/1904.05449
 
 The propsed unsupervised dimension reduction method can bring a sequence of covariance matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved.
 
+
 # Prerequisities
 Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/ for details.
 
@@ -20,7 +21,7 @@ covseqs_dir: file location of original sequences; m: target lower dimension
 
 The default solver in the code is Trustregion, while user can use other solvers for fun. In Pymanopt package, user can define the stopping criteria for the task, by changing maxtime, maxiter, mingradnorm, minstepsize and maxcostevals in solver.py. Usually using a small maxiter and a fixed random seed are enough for getting meaningful results.
 
-For distance calculation between covariance matrices, please see cov_dist.m.
+For distance calculation between covariance matrices, please see cov_dist.py.
 
 
 
