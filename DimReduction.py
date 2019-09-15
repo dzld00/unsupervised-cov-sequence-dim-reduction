@@ -13,7 +13,7 @@ class DimReduction(object):
         self.m = args.m
         self.output = args.output
         
-        print("# target dimension : ", self.m)
+        print("# target dimension : ", self.m)  
         print("# file name of covariance sequences : ", self.covseqs_dir)
     
     def Optimize(self):
