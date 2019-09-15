@@ -10,14 +10,15 @@ from numpy.linalg import inv, norm, det
 from scipy.linalg import logm
 from functools import reduce 
 
-
+# distance between unit-determinant SPDMs
 def cov_dist_unit(punit1, punit2):
     p12 = np.sqrt(reduce(np.dot, [inv(punit1), np.square(punit2), inv(punit1)]))
     
     A12 = logm(p12)
     
     return norm(A12)
-    
+
+# distance between any SPDMs
 def cov_dist(p1, p2):
     n = p1.shape[0]
     
