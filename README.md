@@ -6,6 +6,7 @@ link: https://arxiv.org/abs/1904.05449
 
 The propsed unsupervised dimension reduction method can bring a sequence of symmetric and positive-definite matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved.
 
+![Dimension reduction of simulated covariance matrices](https://github.com/dzld00/unsupervised-cov-sequence-dim-reduction/blob/master/images/sim1.png)
 
 # Prerequisities
 Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/ for details.
