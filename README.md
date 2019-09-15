@@ -6,8 +6,6 @@ link: https://arxiv.org/abs/1904.05449
 
 The propsed unsupervised dimension reduction method can bring a sequence of symmetric and positive-definite matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved.
 
-git add E:\TeXstudio\My work\MDai_TMI_final\figs\DRsimulation2_class_10_n_100.png
-git commit -m 'add png file'
 
 # Prerequisities
 Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/ for details.
