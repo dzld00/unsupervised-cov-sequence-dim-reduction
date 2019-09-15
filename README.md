@@ -4,8 +4,9 @@ Python code for dimension reduction in papaer: Analyzing Dynamical Brain Functio
 
 link: https://arxiv.org/abs/1904.05449
 
-The propsed unsupervised dimension reduction method can bring a sequence of symmetric and positive-definite matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved.
+The propsed unsupervised dimension reduction method can bring a sequence of n by n symmetric and positive-definite matrices to arbitrary lower dimensions (m by m, m < n), while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved. Following are two examples from the paper:
 
+Pairwised distances between simulated covariance matrices with n = 100 (a) and after reducing dimensions to m = 20 (b), 10 (c) and 5 (d).
 ![Dimension reduction of simulated covariance matrices](https://github.com/dzld00/unsupervised-cov-sequence-dim-reduction/blob/master/images/sim1.png)
 
 # Prerequisities
