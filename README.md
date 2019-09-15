@@ -4,7 +4,7 @@ Python code for dimension reduction in papaer: Analyzing Dynamical Brain Functio
 
 link: https://arxiv.org/abs/1904.05449
 
-The propsed unsupervised dimension reduction method can bring a sequence of covariance matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved.
+The propsed unsupervised dimension reduction method can bring a sequence of symmetric and positive-definite matrices to arbitrary lower dimensions, while preserving the relevant distances between the original matrices as much as possible. The matrices in the resulting sequence in lower dimension have the symmetric and positive-definite structure preserved.
 
 
 # Prerequisities
