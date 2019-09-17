@@ -9,13 +9,13 @@ The propsed unsupervised dimension reduction method can bring a sequence of n by
 Pairwised distances between simulated covariance matrices with n = 100 (a) and after reducing dimensions to m = 20 (b), 10 (c) and 5 (d):
 ![Dimension reduction of simulated covariance matrices](https://github.com/dzld00/unsupervised-cov-sequence-dim-reduction/blob/master/images/sim1.png)
 
-Visualization of connectivities using precision matrices estimated by reconstructed SPDMs from different dimensions:
+Visualization of brain functional connectivities using precision matrices estimated by reconstructed SPDMs from different dimensions:
 ![Reconstructed connectivities](https://github.com/dzld00/unsupervised-cov-sequence-dim-reduction/blob/master/images/sim2.png)
 
 In the paper, n was set to 100 in simulations in comparison with the amount of brain ROIs. However, the proposed method is still useful when n is much larger. 
 
-# Prerequisities
-Pymanopt: package for optimization on manifolds. See https://pymanopt.github.io/ for details.
+# Dependency
+Pymanopt: python package for optimization on manifolds. See https://pymanopt.github.io/ for details.
 
 Install: pip install --user pymanopt
 
